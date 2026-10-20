@@ -286,3 +286,20 @@ function startGameLoop() {
 
 // Khởi động game
 resetGame();
+function changeDirection(direction) {
+    if (gameOver || gameWon) return;
+
+    if (direction === "up" && dy === 0) {
+        dx = 0;
+        dy = -size;
+    } else if (direction === "down" && dy === 0) {
+        dx = 0;
+        dy = size;
+    } else if (direction === "left" && dx === 0) {
+        dx = -size;
+        dy = 0;
+    } else if (direction === "right" && dx === 0) {
+        dx = size;
+        dy = 0;
+    }
+}
