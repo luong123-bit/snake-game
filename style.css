@@ -98,3 +98,8 @@ canvas {
     }
 }
 
+document.getElementById("restartButton").addEventListener("click", function() {
+    resetGame();
+});
+
+
