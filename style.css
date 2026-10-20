@@ -59,3 +59,42 @@ canvas {
     user-select: none;
     -webkit-user-select: none;
 }
+.mobile-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 18px auto;
+    touch-action: manipulation;
+}
+
+.middle-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.mobile-controls button {
+    width: 60px;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    background: #249447;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-controls button:active {
+    background: #5ee678;
+    transform: scale(0.95);
+}
+
+@media (min-width: 768px) {
+    .mobile-controls {
+        display: none;
+    }
+}
+
