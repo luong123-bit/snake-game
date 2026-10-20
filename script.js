@@ -303,3 +303,21 @@ function changeDirection(direction) {
         dy = 0;
     }
 }
+.restart-button {
+    display: block;
+    margin: 12px auto 20px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    background: #ffb347;
+    color: #202b36;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.restart-button:active {
+    transform: scale(0.96);
+}
+
