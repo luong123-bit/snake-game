@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #17202a;
+    color: white;
+}
+
+canvas {
+    width: min(400px, 90vw);
+    height: auto;
+    border: 3px solid #5ee678;
+    background: #101820;
+}
+.game-status {
+    width: min(400px, 90vw);
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+
+.status-item {
+    padding: 10px;
+    background: #202b36;
+    border-radius: 8px;
+}
+
+.speed-info {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background: #202b36;
+    border-radius: 8px;
+}
+
+.speed-track {
+    width: 100%;
+    height: 12px;
+    margin-top: 8px;
+    background: #414b57;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#speedBar {
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #5ee678, #ffb347, #ff4757);
+    transition: width 0.3s ease;
+}
+canvas {
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}

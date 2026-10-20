@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rắn săn mồi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🐍 Rắn săn mồi</h1>
+    <p>Điểm: <span id="score">0</span></p>
+    <div class="game-status">
+    <div class="status-item">
+        Màn: <span id="level">1</span>/5
+    </div>
+
+    <div class="status-item">
+        Mồi: <span id="levelFood">0</span>/<span id="targetFood">5</span>
+    </div>
+
+    <div class="speed-info">
+        <div>
+            Tốc độ rắn: <span id="speedLabel">Chậm</span>
+        </div>
+
+        <div class="speed-track">
+            <div id="speedBar"></div>
+        </div>
+    </div>
+</div>
+    <canvas id="game" width="400" height="400"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
