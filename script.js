@@ -320,4 +320,6 @@ function changeDirection(direction) {
 .restart-button:active {
     transform: scale(0.96);
 }
-
+document.getElementById("restartButton").addEventListener("click", function() {
+    resetGame();
+});
